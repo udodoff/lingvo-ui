@@ -1,9 +1,22 @@
 name: Check code style
-run-name: Check code style
-on: [push]
+on:
+    push:
+        branches:
+            - main
+            - master
+    pull_request:
+        branches:
+            - main
+            - master
 jobs:
-    build:
+    ci:
         runs-on: ubuntu-latest
         steps:
-            - run: npm install
-            - run: npm run lint
+            - name: install dependencies
+              run: npm install
+            - name: stylelint
+              run: npm run lint-stylelint
+            - name: eslint
+              run: npm run lint-eslint
+            - name: tsc
+              run: npm run lint-tsc
