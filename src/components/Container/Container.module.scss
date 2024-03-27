@@ -1,0 +1,13 @@
+@use '/src/styles/utils' as utils;
+
+.root {
+    @include utils.defaultContainer;
+}
+
+.small {
+    max-width: utils.$container-small-max-width;
+}
+
+.expand {
+    max-width: none;
+}
