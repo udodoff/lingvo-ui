@@ -1,0 +1,40 @@
+.root {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    line-height: 1.6;
+    letter-spacing: 0.135px;
+    white-space: nowrap;
+
+    &:disabled {
+        pointer-events: none;
+        color: white;
+    }
+
+    &.isRounded {
+        border-radius: 54px;
+    }
+}
+
+.onlyIcon {
+    border-radius: 50%;
+    padding: 0;
+}
+
+.icon {
+    &.isBefore {
+        margin-right: 12px;
+    }
+
+    &.isAfter {
+        margin-left: 12px;
+    }
+}
+
+.contentHidden,
+.loaderHidden {
+    opacity: 0;
+    pointer-events: none;
+}
