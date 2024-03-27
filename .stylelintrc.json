@@ -82,6 +82,9 @@
         "length-zero-no-unit": true,
         "shorthand-property-no-redundant-values": true,
         "color-named": "always-where-possible",
-        "selector-class-pattern": null
+        "selector-class-pattern": null,
+        "at-rule-no-unknown": null,
+        "annotation-no-unknown": null,
+        "media-feature-range-notation": null
     }
 }
